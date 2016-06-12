@@ -1,0 +1,12 @@
+{
+	"name":        "bvg-topological-map",
+	"description": "BVG transport map as semantic SVG.",
+	"version":     "0.1.0",
+	"main":        "map.svg",
+	"files":       ["map.svg"],
+	"keywords":    ["bvg", "vbb", "berlin", "map"],
+	"author":      "Jannis R <mail@jannisr.de>",
+	"homepage":    "https://github.com/derhuerst/bvg-topological-map",
+	"repository":  "derhuerst/bvg-topological-map",
+	"license":     "ISC"
+}
