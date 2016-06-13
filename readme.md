@@ -2,7 +2,7 @@
 
 todo
 
-![topological BVG map](map.svg)
+[![topological BVG map](https://rawgit.com/derhuerst/bvg-topological-map/master/map.svg)](map.svg)
 
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/bvg-topological-map.svg)
 
