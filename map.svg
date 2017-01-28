@@ -1,31 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1120" height="765" viewBox="0 0 1120 765">
 
 <style>
-.line.S1  {stroke: #de4da4} .S1f  {fill: #de4da4}
-.line.S2  {stroke: #005f27} .S2f  {fill: #005f27}
-.line.S3  {stroke: #0a4c99} .S3f  {fill: #0a4c99}
-.line.S5  {stroke: #ff5900} .S5f  {fill: #ff5900}
-.line.S7  {stroke: #6f4e9c} .S7f  {fill: #6f4e9c}
-.line.S8  {stroke: #55a822} .S8f  {fill: #55a822}
-.line.S9  {stroke: #8a0e30} .S9f  {fill: #8a0e30}
-.line.S25 {stroke: #005f27} .S25f {fill: #005f27}
-.line.S41 {stroke: #a23b1e} .S41f {fill: #a23b1e}
-.line.S42 {stroke: #c26a36} .S42f {fill: #c26a36}
-.line.S45 {stroke: #c38737} .S45f {fill: #c38737}
-.line.S46 {stroke: #c38737} .S46f {fill: #c38737}
-.line.S47 {stroke: #c38737} .S47f {fill: #c38737}
-.line.S75 {stroke: #6f4e9c} .S75f {fill: #6f4e9c}
-.line.S85 {stroke: #55a822} .S85f {fill: #55a822}
-.line.U1  {stroke: #55a822} .U1f  {fill: #55a822}
-.line.U2  {stroke: #ff3300} .U2f  {fill: #ff3300}
-.line.U3  {stroke: #019377} .U3f  {fill: #019377}
-.line.U4  {stroke: #ffd900} .U4f  {fill: #ffd900}
-.line.U5  {stroke: #672f17} .U5f  {fill: #672f17}
-.line.U6  {stroke: #6f4e9c} .U6f  {fill: #6f4e9c}
-.line.U7  {stroke: #3690c0} .U7f  {fill: #3690c0}
-.line.U8  {stroke: #0a3c85} .U8f  {fill: #0a3c85}
-.line.U9  {stroke: #ff7300} .U9f  {fill: #ff7300}
-.line.U55 {stroke: #672f17} .U55f {fill: #672f17}
+.line.S1  {stroke: #de4da4} .S1f  {fill: #de4da4} .S1s  {stroke: #de4da4}
+.line.S2  {stroke: #005f27} .S2f  {fill: #005f27} .S2s  {stroke: #005f27}
+.line.S3  {stroke: #0a4c99} .S3f  {fill: #0a4c99} .S3s  {stroke: #0a4c99}
+.line.S5  {stroke: #ff5900} .S5f  {fill: #ff5900} .S5s  {stroke: #ff5900}
+.line.S7  {stroke: #6f4e9c} .S7f  {fill: #6f4e9c} .S7s  {stroke: #6f4e9c}
+.line.S8  {stroke: #55a822} .S8f  {fill: #55a822} .S8s  {stroke: #55a822}
+.line.S9  {stroke: #8a0e30} .S9f  {fill: #8a0e30} .S9s  {stroke: #8a0e30}
+.line.S25 {stroke: #005f27} .S25f {fill: #005f27} .S25s {stroke: #005f27}
+.line.S41 {stroke: #a23b1e} .S41f {fill: #a23b1e} .S41s {stroke: #a23b1e}
+.line.S42 {stroke: #c26a36} .S42f {fill: #c26a36} .S42s {stroke: #c26a36}
+.line.S45 {stroke: #c38737} .S45f {fill: #c38737} .S45s {stroke: #c38737}
+.line.S46 {stroke: #c38737} .S46f {fill: #c38737} .S46s {stroke: #c38737}
+.line.S47 {stroke: #c38737} .S47f {fill: #c38737} .S47s {stroke: #c38737}
+.line.S75 {stroke: #6f4e9c} .S75f {fill: #6f4e9c} .S75s {stroke: #6f4e9c}
+.line.S85 {stroke: #55a822} .S85f {fill: #55a822} .S85s {stroke: #55a822}
+.line.U1  {stroke: #55a822} .U1f  {fill: #55a822} .U1s  {stroke: #55a822}
+.line.U2  {stroke: #ff3300} .U2f  {fill: #ff3300} .U2s  {stroke: #ff3300}
+.line.U3  {stroke: #019377} .U3f  {fill: #019377} .U3s  {stroke: #019377}
+.line.U4  {stroke: #ffd900} .U4f  {fill: #ffd900} .U4s  {stroke: #ffd900}
+.line.U5  {stroke: #672f17} .U5f  {fill: #672f17} .U5s  {stroke: #672f17}
+.line.U6  {stroke: #6f4e9c} .U6f  {fill: #6f4e9c} .U6s  {stroke: #6f4e9c}
+.line.U7  {stroke: #3690c0} .U7f  {fill: #3690c0} .U7s  {stroke: #3690c0}
+.line.U8  {stroke: #0a3c85} .U8f  {fill: #0a3c85} .U8s  {stroke: #0a3c85}
+.line.U9  {stroke: #ff7300} .U9f  {fill: #ff7300} .U9s  {stroke: #ff7300}
+.line.U55 {stroke: #672f17} .U55f {fill: #672f17} .U55s {stroke: #672f17}
+</style>
+
+<style>
+.debug {
+	stroke: red !important;
+	stroke-width: 20 !important;
+}
 </style>
 
 <defs>
@@ -348,197 +355,196 @@
 	<path id="station-900000120004" data-id="900000120004" class="station" d="M685.816 393.744l-2.252 2.253c-.542.525-1.443.477-1.96-.04-.524-.524-.485-1.33.038-1.855l2.276-2.27a1.344 1.344 0 0 1 1.898 0c.525.523.525 1.39 0 1.912z"/>
 </g>
 
-<style>
-.todo {
-	stroke: red !important;
-	stroke-width: 20 !important;
-}
-</style>
-
 <g stroke-width="1" fill="none" fill-rule="evenodd">
-	<path id="station-900000230000" data-id="900000230000" class="S7 station" d="M41 701.7V698.7" stroke="#846DAB"/>
-	<path id="station-900000170005" data-id="900000170005" class="S7 station" d="M913.3 282.6L911.2 280.5" stroke="#846DAB"/>
-	<path id="station-900000170002" data-id="900000170002" class="S7 station" d="M951.4 240.4L953.6 242.6" stroke="#846DAB"/>
-	<path id="station-900000170003" data-id="900000170003" class="S7 station" d="M974.2 218L976.3 220.2" stroke="#846DAB"/>
-	<path id="station-900000152002" data-id="900000152002" class="S7 station" d="M855.8 240.9L853.6 243" stroke="#846DAB"/>
-	<path id="station-900000170001" data-id="900000170001" class="S7 station" d="M934.3 261.6L932.1 259.5" stroke="#846DAB"/>
-	<path id="station-900000048101" data-id="900000048101" class="S7 station" d="M154.2 444.8L156.6 447.2" stroke="#846DAB"/>
-	<path id="station-900000030202" data-id="900000030202" class="S5 station" d="M79 295L81 293L79 295z" stroke="#EE7202"/>
-	<path id="station-900000025424" data-id="900000025424" class="S5 station" d="M104 320L101.8 322.2" stroke="#EE7202"/>
-	<path id="station-900000025321" data-id="900000025321" class="S5 station" d="M129.3 345.4L127.1 347.5" stroke="#EE7202"/>
-	<path id="station-900000026105" data-id="900000026105" class="S5 station" d="M150.7 366.7L148.5 368.9" stroke="#EE7202"/>
-	<path id="station-900000025423" data-id="900000025423" class="S5 station" d="M193 389.1V392.1" stroke="#EE7202"/>
-	<path id="station-900000171001" data-id="900000171001" class="S5 station" d="M929.3 359V356" stroke="#EE7202"/>
-	<path id="station-900000175002" data-id="900000175002" class="S5 station" d="M1001.5 358.7V355.7" stroke="#EE7202"/>
-	<path id="station-900000320026" data-id="900000320026" class="S5 station" d="M1066 358.7V355.7" stroke="#EE7202"/>
-	<path id="station-900000320006" data-id="900000320006" class="S5 station" d="M1105 333.1L1107.3 335.3" stroke="#EE7202"/>
-	<path id="station-900000320007" data-id="900000320007" class="S5 station" d="M1094.7 343.7L1096.9 345.8" stroke="#EE7202"/>
-	<path id="station-900000320008" data-id="900000320008" class="S5 station" d="M1084.7 358.6V355.5" stroke="#EE7202"/>
-	<path id="station-900000176001" data-id="900000176001" class="S5 station" d="M1032.3 358.6V355.5" stroke="#EE7202"/>
-	<path id="station-900000320003" data-id="900000320003" class="S5 station" d="M1112 255.4H1115" stroke="#EE7202"/>
-	<path id="station-900000320002" data-id="900000320002" class="S5 station" d="M1112 241.7H1115" stroke="#EE7202"/>
-	<path id="station-900000320005" data-id="900000320005" class="S5 station" d="M1112 319.6H1115.1" stroke="#EE7202"/>
-	<path id="station-900000260002" data-id="900000260002" class="S46 station" d="M980.3 667L978.2 669" stroke="#CD9C53"/>
-	<path id="station-900000192002" data-id="900000192002" class="S47 station" d="M894.1 557.2V554.2" stroke="#CD9C53"/>
-	<path id="station-900000077155" data-id="900000077155" class="S47 S46 station" d="M784 529.7V526.7" stroke="#CD9C53"/>
-	<!-- <path class="todo" d="M702.2 399.3V399.4" stroke="#62AD2D"/> -->
-	<path id="station-900000023301" data-id="900000023301" class="U1 station" d="M341.5 420V422.7" stroke="#62AD2D"/>
-	<path id="station-900000014102" data-id="900000014102" class="U1 station" d="M688.7 417.2L686.5 415.1" stroke="#62AD2D"/>
-	<path id="station-900000013103" data-id="900000013103" class="U1 station" d="M603.3 422.7V419.6" stroke="#62AD2D"/>
-	<path id="station-900000005201" data-id="900000005201" class="U1 station" d="M452 419.7V422.7" stroke="#62AD2D"/>
-	<path id="station-900000014101" data-id="900000014101" class="U1 station" d="M671.2 425.7V422.6" stroke="#62AD2D"/>
-	<!-- <path class="todo" stroke="#00A192" d="M340.8 472V472.1L343 474.2"/> -->
-	<path id="station-900000045101" data-id="900000045101" class="U3 station" d="M275.2 538.6L277.3 540.7" stroke="#00A192"/>
-	<path id="station-900000051202" data-id="900000051202" class="U3 station" d="M265 548.8L267 550.8" stroke="#00A192"/>
-	<path id="station-900000051302" data-id="900000051302" class="U3 station" d="M253.8 560.3L255.5 562" stroke="#00A192"/>
-	<path id="station-900000051303" data-id="900000051303" class="U3 station" d="M240.8 572.3L243 574.5" stroke="#00A192"/>
-	<!-- todo: thielplatz, oskar-helene-heim -->
-	<path id="station-900000050282" data-id="900000050282" class="U3 station" d="M203.8 610L206 612.2" stroke="#00A192"/>
-	<path id="station-900000023202" data-id="900000023202" class="U3 station" d="M375.7 445.2L373.6 443" stroke="#00A192"/>
-	<path id="station-900000110005" data-id="900000110005" class="U2 station" stroke="#E94E0E" d="M622.2 269.2H619"/>
-	<path id="station-900000100015" data-id="900000100015" class="U2 station" d="M640.6 359.7L642.8 361.9" stroke="#E94E0E"/>
-	<path id="station-900000100014" data-id="900000100014" class="U2 station" d="M626.3 374.1L628.5 376.3" stroke="#E94E0E"/>
-	<path id="station-900000100010" data-id="900000100010" class="U2 station" d="M527.7 376.4V379.4" stroke="#E94E0E"/>
-	<path id="station-900000100013" data-id="900000100013" class="U2 station" d="M610.9 382V378.9" stroke="#E94E0E"/>
-	<path id="station-900000110006" data-id="900000110006" class="U2 station" d="M622.2 251.8H619" stroke="#E94E0E"/>
-	<path id="station-900000100016" data-id="900000100016" class="U2 station" d="M622.3 287H619.3" stroke="#E94E0E"/>
-	<path id="station-900000130011" data-id="900000130011" class="U2 station" d="M622.2 185.8H619" stroke="#E94E0E"/>
-	<path id="station-900000005252" data-id="900000005252" class="U2 station" d="M481 392.6H484" stroke="#E94E0E"/>
-	<path id="station-900000100012" data-id="900000100012" class="U2 station" d="M580.4 382V378.9" stroke="#E94E0E"/>
-	<path id="station-900000022101" data-id="900000022101" class="U2 station" d="M273.4 357.4V360.4" stroke="#E94E0E"/>
-	<path id="station-900000024201" data-id="900000024201" class="U2 station" d="M316 359.8V362.9" stroke="#E94E0E"/>
-	<path id="station-900000025203" data-id="900000025203" class="U2 station" d="M159.7 321.1L157.5 323.3" stroke="#E94E0E"/>
-	<path id="station-900000026201" data-id="900000026201" class="U2 station" d="M203 360.3V363.3" stroke="#E94E0E"/>
-	<path id="station-900000026101" data-id="900000026101" class="U2 station" d="M182.1 339.2L179.9 341.4" stroke="#E94E0E"/>
-	<path id="station-900000056104" data-id="900000056104" class="U2 station" d="M458.2 432.3V429.3" stroke="#E94E0E"/>
-	<path id="station-900000025202" data-id="900000025202" class="U2 station" d="M139.6 300.6L137.2 303" stroke="#E94E0E"/>
-	<path id="station-900000055101" data-id="900000055101" class="U4 station" d="M411.8 461.8H415.3" stroke="#FFD500"/>
-	<path id="station-900000054101" data-id="900000054101" class="U4 station" d="M412 508H415.6" stroke="#FFD500"/>
-	<path id="station-900000100017" data-id="900000100017" class="U5 station" d="M694.5 326.2L692.3 328.3" stroke="#815237"/>
-	<path id="station-900000120025" data-id="900000120025" class="U5 station" d="M713.6 349.5L715.8 347.4" stroke="#815237"/>
-	<!-- <path class="todo" d="M736.7 367.8L734.5 367" stroke="#815237"/> -->
-	<path id="station-900000160005" data-id="900000160005" class="U5 station" d="M810.7 374.3V377.3" stroke="#815237"/>
-	<path id="station-900000171005" data-id="900000171005" class="U5 station" d="M922.6 396.1L920.4 394" stroke="#815237"/>
-	<path id="station-900000175006" data-id="900000175006" class="U5 station" d="M1008 310.7L1005.9 308.5" stroke="#815237"/>
-	<path id="station-900000175005" data-id="900000175005" class="U5 station" d="M993.1 325.9L990.9 323.7" stroke="#815237"/>
-	<path id="station-900000175004" data-id="900000175004" class="U5 station" d="M976.9 342L974.7 339.8" stroke="#815237"/>
-	<path id="station-900000171006" data-id="900000171006" class="U5 station" d="M940 379.2L937.8 377.1" stroke="#815237"/>
-	<path id="station-900000161512" data-id="900000161512" class="U5 station" d="M862.3 374.5V377.5" stroke="#815237"/>
-	<path id="station-900000175015" data-id="900000175015" class="U5 station" d="M1039.1 279.8L1037 277.7" stroke="#815237"/>
-	<path id="station-900000175007" data-id="900000175007" class="U5 station" d="M1023.8 294.4L1021.7 292.3" stroke="#815237"/>
-	<path id="station-900000120008" data-id="900000120008" class="U5 station" d="M723.6 359.7L725.8 357.5" stroke="#815237"/>
-	<path id="station-900000161002" data-id="900000161002" class="U5 station" d="M902.8 397.8L900.6 400" stroke="#815237"/>
-	<path id="station-900000120006" data-id="900000120006" class="U5 station" d="M704.8 336.3L702.6 338.5" stroke="#815237"/>
-	<path id="station-900000175010" data-id="900000175010" class="U5 station" d="M1052 266.6L1050 264.5" stroke="#815237"/>
-	<!-- <path class="todo" d="M476.2 333V332.9L478.4 330.7" stroke="#815237"/> -->
-	<!-- <path class="todo" d="M321 103.2H321.1L323.2 101.1" stroke="#846DAB"/> -->
-	<path id="station-900000088201" data-id="900000088201" class="U6 station" d="M329.6 111.8L331.8 109.7" stroke="#846DAB"/>
-	<path id="station-900000086101" data-id="900000086101" class="U6 station" d="M339 121.4L341.2 119.3" stroke="#846DAB"/>
-	<path id="station-900000087101" data-id="900000087101" class="U6 station" d="M350.6 132.2L352.8 130" stroke="#846DAB"/>
-	<path id="station-900000011101" data-id="900000011101" class="U6 station" d="M391.2 169.2L389 171.3" stroke="#846DAB"/>
-	<path id="station-900000017102" data-id="900000017102" class="U6 station" d="M561 484.2H564.1" stroke="#846DAB"/>
-	<path id="station-900000068101" data-id="900000068101" class="U6 station" d="M561.2 502.8H564.2" stroke="#846DAB"/>
-	<path id="station-900000070101" data-id="900000070101" class="U6 station" d="M564.3 580.8H561.3" stroke="#846DAB"/>
-	<path id="station-900000069271" data-id="900000069271" class="U6 station" d="M564.3 568.1H561.3" stroke="#846DAB"/>
-	<path id="station-900000068302" data-id="900000068302" class="U6 station" d="M564.3 554.4H561.3" stroke="#846DAB"/>
-	<path id="station-900000011102" data-id="900000011102" class="U6 station" d="M376 158.5L378.2 156.3" stroke="#846DAB"/>
-	<path id="station-900000009103" data-id="900000009103" class="U6 station" d="M407 185.2L404.8 187.3" stroke="#846DAB"/>
-	<path id="station-900000008102" data-id="900000008102" class="U6 station" d="M466 243.4L463.9 245.5" stroke="#846DAB"/>
-	<path id="station-900000100501" data-id="900000100501" class="U6 station" d="M482.1 259.8L480 262" stroke="#846DAB"/>
-	<path id="station-900000100009" data-id="900000100009" class="U6 station" d="M499.3 277L497 279" stroke="#846DAB"/>
-	<path id="station-900000100019" data-id="900000100019" class="U6 station" d="M519.4 296.8L517.2 299" stroke="#846DAB"/>
-	<path id="station-900000012102" data-id="900000012102" class="U6 station" d="M564.3 403.2H561.3" stroke="#846DAB"/>
-	<path id="station-900000068202" data-id="900000068202" class="U6 station" d="M564.3 539.4H561.3" stroke="#846DAB"/>
-	<path id="station-900000100027" data-id="900000100027" class="U6 station" d="M561.3 364.2H558.3" stroke="#846DAB"/>
-	<path id="station-900000070301" data-id="900000070301" class="U6 station" d="M564.1 593.3H561.3" stroke="#846DAB"/>
-	<path id="station-900000022202" data-id="900000022202" class="U7 station" d="M299 328.8H302" stroke="#009BD9"/>
-	<path id="station-900000083101" data-id="900000083101" class="U7 station" d="M745.7 672.1L747.8 670" stroke="#009BD9"/>
-	<path id="station-900000083102" data-id="900000083102" class="U7 station" d="M731.6 658.2L733.8 656" stroke="#009BD9"/>
-	<path id="station-900000082201" data-id="900000082201" class="U7 station" d="M715.4 641.9L717.6 639.8" stroke="#009BD9"/>
-	<path id="station-900000080201" data-id="900000080201" class="U7 station" d="M708.4 561H705.4" stroke="#009BD9"/>
-	<path id="station-900000078102" data-id="900000078102" class="U7 station" d="M694.4 479.4L692.2 481.6" stroke="#009BD9"/>
-	<path id="station-900000016202" data-id="900000016202" class="U7 station" d="M626.4 463.3V466.3" stroke="#009BD9"/>
-	<path id="station-900000016101" data-id="900000016101" class="U7 station" d="M587 463.4V466.4" stroke="#009BD9"/>
-	<path id="station-900000054102" data-id="900000054102" class="U7 station" d="M459.9 490V493" stroke="#009BD9"/>
-	<path id="station-900000054103" data-id="900000054103" class="U7 station" d="M436.7 495.3V492.3" stroke="#009BD9"/>
-	<path id="station-900000041102" data-id="900000041102" class="U7 station" d="M342.2 492.4V495.4" stroke="#009BD9"/>
-	<path id="station-900000041201" data-id="900000041201" class="U7 station" d="M302.6 461.7L300.4 463.9" stroke="#009BD9"/>
-	<path id="station-900000018102" data-id="900000018102" class="U7 station" d="M264 231.8V228.8" stroke="#009BD9"/>
-	<path id="station-900000035101" data-id="900000035101" class="U7 station" d="M235 231.8V228.7" stroke="#009BD9"/>
-	<path id="station-900000034102" data-id="900000034102" class="U7 station" d="M134 229V232" stroke="#009BD9"/>
-	<path id="station-900000029301" data-id="900000029301" class="U7 station" d="M83.7 243.1L85.9 245.2" stroke="#009BD9"/>
-	<path id="station-900000033101" data-id="900000033101" class="U7 station" d="M104.3 231.7V228.7" stroke="#009BD9"/>
-	<path id="station-900000036101" data-id="900000036101" class="U7 station" d="M207.1 232V229" stroke="#009BD9"/>
-	<path id="station-900000034101" data-id="900000034101" class="U7 station" d="M170.7 231.8V228.8" stroke="#009BD9"/>
-	<path id="station-900000078103" data-id="900000078103" class="U7 station" d="M708 496.9H705" stroke="#009BD9"/>
-	<path id="station-900000080202" data-id="900000080202" class="U7 station" d="M705.4 544H708.4" stroke="#009BD9"/>
-	<path id="station-900000080401" data-id="900000080401" class="U7 station" d="M705.4 580H708.4" stroke="#009BD9"/>
-	<path id="station-900000080402" data-id="900000080402" class="U7 station" d="M705.4 601H708.4" stroke="#009BD9"/>
-	<path id="station-900000082202" data-id="900000082202" class="U7 station" d="M705.4 618.5H708.4" stroke="#009BD9"/>
-	<path id="station-900000019204" data-id="900000019204" class="U7 station" d="M302 291.8H299" stroke="#009BD9"/>
-	<path id="station-900000079201" data-id="900000079201" class="U8 station" d="M656.2 504.5H653.2" stroke="#00599A"/>
-	<path id="station-900000016201" data-id="900000016201" class="U8 station" d="M656.1 443.2H653.1" stroke="#00599A"/>
-	<path id="station-900000079202" data-id="900000079202" class="U8 station" d="M656.2 484.8H653.2" stroke="#00599A"/>
-	<path id="station-900000007110" data-id="900000007110" class="U8 station" d="M569.5 259.7L571.7 257.6" stroke="#00599A"/>
-	<path id="station-900000007103" data-id="900000007103" class="U8 station" d="M557.1 247L559.3 244.8" stroke="#00599A"/>
-	<path id="station-900000085104" data-id="900000085104" class="U8 station" d="M438.1 132.4L440.3 130.3" stroke="#00599A"/>
-	<path id="station-900000086160" data-id="900000086160" class="U8 station" d="M426.7 121.1L428.8 119" stroke="#00599A"/>
+	<!-- todo: thielplatz -->
+	<!-- todo: oskar-helene-heim -->
 	<!-- todo: franz-neumann-platz -->
-	<path id="station-900000096410" data-id="900000096410" class="U8 station" d="M421 83.8L418.8 81.7" stroke="#00599A"/>
-	<path id="station-900000100008" data-id="900000100008" class="U8 station" d="M656.5 385.9H653.5" stroke="#00599A"/>
-	<path id="station-900000085203" data-id="900000085203" class="U8 station" d="M448.5 142.9L450.7 140.7" stroke="#00599A"/>
-	<path id="station-900000100051" data-id="900000100051" class="U8 station" d="M604.4 294L602.2 296.1" stroke="#00599A"/>
-	<path id="station-900000100023" data-id="900000100023" class="U8 station" d="M588.6 277.8L586.4 279.9" stroke="#00599A"/>
-	<path id="station-900000009203" data-id="900000009203" class="U8 station" d="M507.9 193.9L505.7 196" stroke="#00599A"/>
-	<path id="station-900000013101" data-id="900000013101" class="U8 station" d="M653.2 405.2H656.2" stroke="#00599A"/>
-	<path id="station-900000009201" data-id="900000009201" class="U9 station" d="M445.9 184.6L448.1 186.8" stroke="#F28700"/>
-	<path id="station-900000009101" data-id="900000009101" class="U9 station" d="M418.1 211.9L416 209.8" stroke="#F28700"/>
-	<path id="station-900000002201" data-id="900000002201" class="U9 station" d="M405 263H402" stroke="#F28700"/>
-	<path id="station-900000003101" data-id="900000003101" class="U9 station" d="M402 362L404.2 364.2" stroke="#F28700"/>
-	<path id="station-900000043201" data-id="900000043201" class="U9 station" d="M358.3 475.2H361.6" stroke="#F28700"/>
-	<path id="station-900000061102" data-id="900000061102" class="U9 station" d="M358.1 552.3H355.1" stroke="#F28700"/>
-	<path id="station-900000061101" data-id="900000061101" class="U9 station" d="M354.7 570.6H357.7" stroke="#F28700"/>
-	<path id="station-900000062203" data-id="900000062203" class="U9 station" d="M354.7 588.9H357.7" stroke="#F28700"/>
-	<path id="station-900000057104" data-id="900000057104" class="S1 station" d="M464.6 507.2L466.7 509.4" stroke="#DD6CA6"/>
-	<path id="station-900000200007" data-id="900000200007" class="S1 station" d="M400.3 22.6L402.5 20.5" stroke="#DD6CA6"/>
-	<path id="station-900000200006" data-id="900000200006" class="S1 station" d="M393.5 15.7L395.7 13.5" stroke="#DD6CA6"/>
-	<path id="station-900000092201" data-id="900000092201" class="S1 station" d="M431.8 54L429.6 56.1" stroke="#DD6CA6"/>
-	<path id="station-900000093201" data-id="900000093201" class="S1 station" d="M439.7 62L437.5 64.2" stroke="#DD6CA6"/>
-	<path id="station-900000060101" data-id="900000060101" class="S1 station" d="M412.3 559.3L414.4 561.5" stroke="#DD6CA6"/>
-	<path id="station-900000066102" data-id="900000066102" class="S1 station" d="M337.8 633.6L335.7 631.5" stroke="#DD6CA6"/>
-	<path id="station-900000049202" data-id="900000049202" class="S1 station" d="M262.9 664.2V667.2" stroke="#DD6CA6"/>
-	<path id="station-900000049201" data-id="900000049201" class="S1 station" d="M218.6 666.8V663.8" stroke="#DD6CA6"/>
-	<path id="station-900000050301" data-id="900000050301" class="S1 station" d="M190.5 637.9L188.3 640" stroke="#DD6CA6"/>
-	<path id="station-900000050355" data-id="900000050355" class="S1 station" d="M162.9 628.5V631.6" stroke="#DD6CA6"/>
-	<path id="station-900000066101" data-id="900000066101" class="S1 station" d="M314.7 651.5L316.9 653.7" stroke="#DD6CA6"/>
-	<path id="station-900000063101" data-id="900000063101" class="S1 station" d="M390.8 585L388.6 582.9" stroke="#DD6CA6"/>
-	<path id="station-900000068301" data-id="900000068301" class="S2 station" d="M513.8 607L516 604.8" stroke="#007B3D"/>
-	<path id="station-900000074202" data-id="900000074202" class="S2 station" d="M545.5 685.5H542.5" stroke="#007B3D"/>
-	<path id="station-900000245028" data-id="900000245028" class="S2 station" d="M545.6 738H542.6" stroke="#007B3D"/>
-	<path id="station-900000135001" data-id="900000135001" class="S2 station" d="M705.8 57.5L708 59.7" stroke="#007B3D"/>
-	<path id="station-900000350162" data-id="900000350162" class="S2 station" d="M717.1 46.4L719.3 48.6" stroke="#007B3D"/>
-	<path id="station-900000350161" data-id="900000350161" class="S2 station" d="M737.3 26.3L739.4 28.5" stroke="#007B3D"/>
-	<path id="station-900000350163" data-id="900000350163" class="S2 station" d="M727.4 36.2L729.6 38.4" stroke="#007B3D"/>
-	<path id="station-900000073101" data-id="900000073101" class="S2 station" d="M537.3 626.9L535.1 629" stroke="#007B3D"/>
-	<path id="station-900000072101" data-id="900000072101" class="S2 station" d="M542.5 658.7H545.5" stroke="#007B3D"/>
-	<path id="station-900000074201" data-id="900000074201" class="S2 station" d="M542.5 717.5H545.5" stroke="#007B3D"/>
-	<path id="station-900000220114" data-id="900000220114" class="S2 station" d="M315.6 734.1V731.6" stroke="#007B3D"/>
-	<path id="station-900000091205" data-id="900000091205" class="S25 station" d="M298.9 71.4L301 69.2" stroke="#007B3D"/>
-	<path id="station-900000091203" data-id="900000091203" class="S25 station" d="M287.7 60.5L289.8 58.3" stroke="#007B3D"/>
-	<path id="station-900000096405" data-id="900000096405" class="S25 station" d="M358 102.6V105.6" stroke="#007B3D"/>
-	<path id="station-900000085105" data-id="900000085105" class="S25 station" d="M449.8 102.6V105.4" stroke="#007B3D"/>
-	<path id="station-900000063452" data-id="900000063452" class="S25 station" d="M485.3 611.4L483.2 609.2" stroke="#007B3D"/>
-	<path id="station-900000064256" data-id="900000064256" class="S25 station" d="M407.5 685.2L409.7 687.4" stroke="#007B3D"/>
-	<path id="station-900000064201" data-id="900000064201" class="S25 station" d="M383.6 713.5L381.5 711.4" stroke="#007B3D"/>
-	<path id="station-900000067221" data-id="900000067221" class="S25 station" d="M464.8 632.4L462.7 630.3" stroke="#007B3D"/>
-	<path id="station-900000160001" data-id="900000160001" class="S3 station" d="M824.8 416L827 413.9" stroke="#0065AE"/>
-	<path id="station-900000160002" data-id="900000160002" class="S3 station" d="M843.3 434.3L845.5 432.1" stroke="#0065AE"/>
-	<path id="station-900000183001" data-id="900000183001" class="S3 station" d="M1010.8 532.6L1013 530.4" stroke="#0065AE"/>
-	<path id="station-900000182001" data-id="900000182001" class="S3 station" d="M972.6 494.4L974.8 492.3" stroke="#0065AE"/>
-	<path id="station-900000182002" data-id="900000182002" class="S3 station" d="M991.8 513.8L994 511.6" stroke="#0065AE"/>
-	<path id="station-900000183002" data-id="900000183002" class="S3 station" d="M1027.6 549.4L1029.8 547.2" stroke="#0065AE"/>
-	<path id="station-900000180002" data-id="900000180002" class="S3 station" d="M934.6 456.3L936.8 454.2" stroke="#0065AE"/>
-	<path id="station-900000180001" data-id="900000180001" class="S3 station" d="M953.7 475.4L955.8 473.3" stroke="#0065AE"/>
+	<!-- todo: bergfelde -->
+	<!-- todo: schönfließ -->
+	<!-- todo: mühlenbeck-mönchnühle -->
+	<!-- todo: turmstr -->
+	<!-- todo: ernst-reuter-platz -->
+	<!-- todo: strausberg-nord -->
+	<path id="station-900000230000" data-id="900000230000" class="S7 S7s station" d="M41 701.7V698.7"/>
+	<path id="station-900000170005" data-id="900000170005" class="S7 S7s station" d="M913.3 282.6L911.2 280.5"/>
+	<path id="station-900000170002" data-id="900000170002" class="S7 S7s station" d="M951.4 240.4L953.6 242.6"/>
+	<path id="station-900000170003" data-id="900000170003" class="S7 S7s station" d="M974.2 218L976.3 220.2"/>
+	<path id="station-900000152002" data-id="900000152002" class="S7 S7s station" d="M855.8 240.9L853.6 243"/>
+	<path id="station-900000170001" data-id="900000170001" class="S7 S7s station" d="M934.3 261.6L932.1 259.5"/>
+	<path id="station-900000048101" data-id="900000048101" class="S7 S7s station" d="M154.2 444.8L156.6 447.2"/>
+	<path id="station-900000030202" data-id="900000030202" class="S5 S5s station" d="M79 295L81 293L79 295z"/>
+	<path id="station-900000025424" data-id="900000025424" class="S5 S5s station" d="M104 320L101.8 322.2"/>
+	<path id="station-900000025321" data-id="900000025321" class="S5 S5s station" d="M129.3 345.4L127.1 347.5"/>
+	<path id="station-900000026105" data-id="900000026105" class="S5 S5s station" d="M150.7 366.7L148.5 368.9"/>
+	<path id="station-900000025423" data-id="900000025423" class="S5 S5s station" d="M193 389.1V392.1"/>
+	<path id="station-900000171001" data-id="900000171001" class="S5 S5s station" d="M929.3 359V356"/>
+	<path id="station-900000175002" data-id="900000175002" class="S5 S5s station" d="M1001.5 358.7V355.7"/>
+	<path id="station-900000320026" data-id="900000320026" class="S5 S5s station" d="M1066 358.7V355.7"/>
+	<path id="station-900000320006" data-id="900000320006" class="S5 S5s station" d="M1105 333.1L1107.3 335.3"/>
+	<path id="station-900000320007" data-id="900000320007" class="S5 S5s station" d="M1094.7 343.7L1096.9 345.8"/>
+	<path id="station-900000320008" data-id="900000320008" class="S5 S5s station" d="M1084.7 358.6V355.5"/>
+	<path id="station-900000176001" data-id="900000176001" class="S5 S5s station" d="M1032.3 358.6V355.5"/>
+	<path id="station-900000320003" data-id="900000320003" class="S5 S5s station" d="M1112 255.4H1115"/>
+	<path id="station-900000320002" data-id="900000320002" class="S5 S5s station" d="M1112 241.7H1115"/>
+	<path id="station-900000320005" data-id="900000320005" class="S5 S5s station" d="M1112 319.6H1115.1"/>
+	<path id="station-900000260002" data-id="900000260002" class="S46 S46s station" d="M980.3 667L978.2 669"/>
+	<path id="station-900000192002" data-id="900000192002" class="S47 S47s station" d="M894.1 557.2V554.2"/>
+	<path id="station-900000077155" data-id="900000077155" class="S47 S47s S46 S46s station" d="M784 529.7V526.7"/>
+	<path id="station-900000023301" data-id="900000023301" class="U1 U1s station" d="M341.5 420V422.7"/>
+	<path id="station-900000014102" data-id="900000014102" class="U1 U1s station" d="M688.7 417.2L686.5 415.1"/>
+	<path id="station-900000013103" data-id="900000013103" class="U1 U1s station" d="M603.3 422.7V419.6"/>
+	<path id="station-900000005201" data-id="900000005201" class="U1 U1s station" d="M452 419.7V422.7"/>
+	<path id="station-900000014101" data-id="900000014101" class="U1 U1s station" d="M671.2 425.7V422.6"/>
+	<path id="station-900000043101" data-id="900000043101" class="U3 U3s station" d="M340.8 472L343 474.2"/>
+	<path id="station-900000045101" data-id="900000045101" class="U3 U3s station" d="M275.2 538.6L277.3 540.7"/>
+	<path id="station-900000051202" data-id="900000051202" class="U3 U3s station" d="M265 548.8L267 550.8"/>
+	<path id="station-900000051302" data-id="900000051302" class="U3 U3s station" d="M253.8 560.3L255.5 562"/>
+	<path id="station-900000051303" data-id="900000051303" class="U3 U3s station" d="M240.8 572.3L243 574.5"/>
+	<path id="station-900000050282" data-id="900000050282" class="U3 U3s station" d="M203.8 610L206 612.2"/>
+	<path id="station-900000023202" data-id="900000023202" class="U3 U3s station" d="M375.7 445.2L373.6 443"/>
+	<path id="station-900000110005" data-id="900000110005" class="U2 U2s station" d="M622.2 269.2H619"/>
+	<path id="station-900000100015" data-id="900000100015" class="U2 U2s station" d="M640.6 359.7L642.8 361.9"/>
+	<path id="station-900000100014" data-id="900000100014" class="U2 U2s station" d="M626.3 374.1L628.5 376.3"/>
+	<path id="station-900000100010" data-id="900000100010" class="U2 U2s station" d="M527.7 376.4V379.4"/>
+	<path id="station-900000100013" data-id="900000100013" class="U2 U2s station" d="M610.9 382V378.9"/>
+	<path id="station-900000110006" data-id="900000110006" class="U2 U2s station" d="M622.2 251.8H619"/>
+	<path id="station-900000100016" data-id="900000100016" class="U2 U2s station" d="M622.3 287H619.3"/>
+	<path id="station-900000130011" data-id="900000130011" class="U2 U2s station" d="M622.2 185.8H619"/>
+	<path id="station-900000005252" data-id="900000005252" class="U2 U2s station" d="M481 392.6H484"/>
+	<path id="station-900000100012" data-id="900000100012" class="U2 U2s station" d="M580.4 382V378.9"/>
+	<path id="station-900000022101" data-id="900000022101" class="U2 U2s station" d="M273.4 357.4V360.4"/>
+	<path id="station-900000024201" data-id="900000024201" class="U2 U2s station" d="M316 359.8V362.9"/>
+	<path id="station-900000025203" data-id="900000025203" class="U2 U2s station" d="M159.7 321.1L157.5 323.3"/>
+	<path id="station-900000026201" data-id="900000026201" class="U2 U2s station" d="M203 360.3V363.3"/>
+	<path id="station-900000026101" data-id="900000026101" class="U2 U2s station" d="M182.1 339.2L179.9 341.4"/>
+	<path id="station-900000056104" data-id="900000056104" class="U2 U2s station" d="M458.2 432.3V429.3"/>
+	<path id="station-900000025202" data-id="900000025202" class="U2 U2s station" d="M139.6 300.6L137.2 303"/>
+	<path id="station-900000055101" data-id="900000055101" class="U4 U4s station" d="M411.8 461.8H415.3"/>
+	<path id="station-900000054101" data-id="900000054101" class="U4 U4s station" d="M412 508H415.6"/>
+	<path id="station-900000120009" data-id="900000120009" class="U5 U5s station" d="M734.5 370.3L736.7 367.9"/>
+	<path id="station-900000100017" data-id="900000100017" class="U5 U5s station" d="M694.5 326.2L692.3 328.3"/>
+	<path id="station-900000120025" data-id="900000120025" class="U5 U5s station" d="M713.6 349.5L715.8 347.4"/>
+	<path id="station-900000160005" data-id="900000160005" class="U5 U5s station" d="M810.7 374.3V377.3"/>
+	<path id="station-900000171005" data-id="900000171005" class="U5 U5s station" d="M922.6 396.1L920.4 394"/>
+	<path id="station-900000175006" data-id="900000175006" class="U5 U5s station" d="M1008 310.7L1005.9 308.5"/>
+	<path id="station-900000175005" data-id="900000175005" class="U5 U5s station" d="M993.1 325.9L990.9 323.7"/>
+	<path id="station-900000175004" data-id="900000175004" class="U5 U5s station" d="M976.9 342L974.7 339.8"/>
+	<path id="station-900000171006" data-id="900000171006" class="U5 U5s station" d="M940 379.2L937.8 377.1"/>
+	<path id="station-900000161512" data-id="900000161512" class="U5 U5s station" d="M862.3 374.5V377.5"/>
+	<path id="station-900000175015" data-id="900000175015" class="U5 U5s station" d="M1039.1 279.8L1037 277.7"/>
+	<path id="station-900000175007" data-id="900000175007" class="U5 U5s station" d="M1023.8 294.4L1021.7 292.3"/>
+	<path id="station-900000120008" data-id="900000120008" class="U5 U5s station" d="M723.6 359.7L725.8 357.5"/>
+	<path id="station-900000161002" data-id="900000161002" class="U5 U5s station" d="M902.8 397.8L900.6 400"/>
+	<path id="station-900000120006" data-id="900000120006" class="U5 U5s station" d="M704.8 336.3L702.6 338.5"/>
+	<path id="station-900000175010" data-id="900000175010" class="U5 U5s station" d="M1052 266.6L1050 264.5"/>
+	<path id="station-900000003254" data-id="900000003254" class="U55 U55s station" d="M476.2 333L478.4 330.7"/>
+	<path id="station-900000088201" data-id="900000088201" class="U6 U6s station" d="M329.6 111.8L331.8 109.7"/>
+	<path id="station-900000086101" data-id="900000086101" class="U6 U6s station" d="M339 121.4L341.2 119.3"/>
+	<path id="station-900000087101" data-id="900000087101" class="U6 U6s station" d="M350.6 132.2L352.8 130"/>
+	<path id="station-900000011101" data-id="900000011101" class="U6 U6s station" d="M391.2 169.2L389 171.3"/>
+	<path id="station-900000017102" data-id="900000017102" class="U6 U6s station" d="M561 484.2H564.1"/>
+	<path id="station-900000068101" data-id="900000068101" class="U6 U6s station" d="M561.2 502.8H564.2"/>
+	<path id="station-900000070101" data-id="900000070101" class="U6 U6s station" d="M564.3 580.8H561.3"/>
+	<path id="station-900000069271" data-id="900000069271" class="U6 U6s station" d="M564.3 568.1H561.3"/>
+	<path id="station-900000068302" data-id="900000068302" class="U6 U6s station" d="M564.3 554.4H561.3"/>
+	<path id="station-900000011102" data-id="900000011102" class="U6 U6s station" d="M376 158.5L378.2 156.3"/>
+	<path id="station-900000009103" data-id="900000009103" class="U6 U6s station" d="M407 185.2L404.8 187.3"/>
+	<path id="station-900000008102" data-id="900000008102" class="U6 U6s station" d="M466 243.4L463.9 245.5"/>
+	<path id="station-900000100501" data-id="900000100501" class="U6 U6s station" d="M482.1 259.8L480 262"/>
+	<path id="station-900000100009" data-id="900000100009" class="U6 U6s station" d="M499.3 277L497 279"/>
+	<path id="station-900000100019" data-id="900000100019" class="U6 U6s station" d="M519.4 296.8L517.2 299"/>
+	<path id="station-900000012102" data-id="900000012102" class="U6 U6s station" d="M564.3 403.2H561.3"/>
+	<path id="station-900000068202" data-id="900000068202" class="U6 U6s station" d="M564.3 539.4H561.3"/>
+	<path id="station-900000100027" data-id="900000100027" class="U6 U6s station" d="M561.3 364.2H558.3"/>
+	<path id="station-900000070301" data-id="900000070301" class="U6 U6s station" d="M564.1 593.3H561.3"/>
+	<path id="station-900000088202" data-id="900000088202" class="U6 U6s station" d="M321 103.2L323.2 101.1"/>
+	<path id="station-900000022202" data-id="900000022202" class="U7 U7s station" d="M299 328.8H302"/>
+	<path id="station-900000083101" data-id="900000083101" class="U7 U7s station" d="M745.7 672.1L747.8 670"/>
+	<path id="station-900000083102" data-id="900000083102" class="U7 U7s station" d="M731.6 658.2L733.8 656"/>
+	<path id="station-900000082201" data-id="900000082201" class="U7 U7s station" d="M715.4 641.9L717.6 639.8"/>
+	<path id="station-900000080201" data-id="900000080201" class="U7 U7s station" d="M708.4 561H705.4"/>
+	<path id="station-900000078102" data-id="900000078102" class="U7 U7s station" d="M694.4 479.4L692.2 481.6"/>
+	<path id="station-900000016202" data-id="900000016202" class="U7 U7s station" d="M626.4 463.3V466.3"/>
+	<path id="station-900000016101" data-id="900000016101" class="U7 U7s station" d="M587 463.4V466.4"/>
+	<path id="station-900000054102" data-id="900000054102" class="U7 U7s station" d="M459.9 490V493"/>
+	<path id="station-900000054103" data-id="900000054103" class="U7 U7s station" d="M436.7 495.3V492.3"/>
+	<path id="station-900000041102" data-id="900000041102" class="U7 U7s station" d="M342.2 492.4V495.4"/>
+	<path id="station-900000041201" data-id="900000041201" class="U7 U7s station" d="M302.6 461.7L300.4 463.9"/>
+	<path id="station-900000018102" data-id="900000018102" class="U7 U7s station" d="M264 231.8V228.8"/>
+	<path id="station-900000035101" data-id="900000035101" class="U7 U7s station" d="M235 231.8V228.7"/>
+	<path id="station-900000034102" data-id="900000034102" class="U7 U7s station" d="M134 229V232"/>
+	<path id="station-900000029301" data-id="900000029301" class="U7 U7s station" d="M83.7 243.1L85.9 245.2"/>
+	<path id="station-900000033101" data-id="900000033101" class="U7 U7s station" d="M104.3 231.7V228.7"/>
+	<path id="station-900000036101" data-id="900000036101" class="U7 U7s station" d="M207.1 232V229"/>
+	<path id="station-900000034101" data-id="900000034101" class="U7 U7s station" d="M170.7 231.8V228.8"/>
+	<path id="station-900000078103" data-id="900000078103" class="U7 U7s station" d="M708 496.9H705"/>
+	<path id="station-900000080202" data-id="900000080202" class="U7 U7s station" d="M705.4 544H708.4"/>
+	<path id="station-900000080401" data-id="900000080401" class="U7 U7s station" d="M705.4 580H708.4"/>
+	<path id="station-900000080402" data-id="900000080402" class="U7 U7s station" d="M705.4 601H708.4"/>
+	<path id="station-900000082202" data-id="900000082202" class="U7 U7s station" d="M705.4 618.5H708.4"/>
+	<path id="station-900000019204" data-id="900000019204" class="U7 U7s station" d="M302 291.8H299"/>
+	<path id="station-900000079201" data-id="900000079201" class="U8 U8s station" d="M656.2 504.5H653.2"/>
+	<path id="station-900000016201" data-id="900000016201" class="U8 U8s station" d="M656.1 443.2H653.1"/>
+	<path id="station-900000079202" data-id="900000079202" class="U8 U8s station" d="M656.2 484.8H653.2"/>
+	<path id="station-900000007110" data-id="900000007110" class="U8 U8s station" d="M569.5 259.7L571.7 257.6"/>
+	<path id="station-900000007103" data-id="900000007103" class="U8 U8s station" d="M557.1 247L559.3 244.8"/>
+	<path id="station-900000085104" data-id="900000085104" class="U8 U8s station" d="M438.1 132.4L440.3 130.3"/>
+	<path id="station-900000086160" data-id="900000086160" class="U8 U8s station" d="M426.7 121.1L428.8 119"/>
+	<path id="station-900000096410" data-id="900000096410" class="U8 U8s station" d="M421 83.8L418.8 81.7"/>
+	<path id="station-900000100008" data-id="900000100008" class="U8 U8s station" d="M656.5 385.9H653.5"/>
+	<path id="station-900000085203" data-id="900000085203" class="U8 U8s station" d="M448.5 142.9L450.7 140.7"/>
+	<path id="station-900000100051" data-id="900000100051" class="U8 U8s station" d="M604.4 294L602.2 296.1"/>
+	<path id="station-900000100023" data-id="900000100023" class="U8 U8s station" d="M588.6 277.8L586.4 279.9"/>
+	<path id="station-900000009203" data-id="900000009203" class="U8 U8s station" d="M507.9 193.9L505.7 196"/>
+	<path id="station-900000013101" data-id="900000013101" class="U8 U8s station" d="M653.2 405.2H656.2"/>
+	<path id="station-900000009201" data-id="900000009201" class="U9 U9s station" d="M445.9 184.6L448.1 186.8"/>
+	<path id="station-900000009101" data-id="900000009101" class="U9 U9s station" d="M418.1 211.9L416 209.8"/>
+	<path id="station-900000002201" data-id="900000002201" class="U9 U9s station" d="M405 263H402"/>
+	<path id="station-900000003101" data-id="900000003101" class="U9 U9s station" d="M402 362L404.2 364.2"/>
+	<path id="station-900000043201" data-id="900000043201" class="U9 U9s station" d="M358.3 475.2H361.6"/>
+	<path id="station-900000061102" data-id="900000061102" class="U9 U9s station" d="M358.1 552.3H355.1"/>
+	<path id="station-900000061101" data-id="900000061101" class="U9 U9s station" d="M354.7 570.6H357.7"/>
+	<path id="station-900000062203" data-id="900000062203" class="U9 U9s station" d="M354.7 588.9H357.7"/>
+	<path id="station-900000057104" data-id="900000057104" class="S1 S1s station" d="M464.6 507.2L466.7 509.4"/>
+	<path id="station-900000200007" data-id="900000200007" class="S1 S1s station" d="M400.3 22.6L402.5 20.5"/>
+	<path id="station-900000200006" data-id="900000200006" class="S1 S1s station" d="M393.5 15.7L395.7 13.5"/>
+	<path id="station-900000092201" data-id="900000092201" class="S1 S1s station" d="M431.8 54L429.6 56.1"/>
+	<path id="station-900000093201" data-id="900000093201" class="S1 S1s station" d="M439.7 62L437.5 64.2"/>
+	<path id="station-900000060101" data-id="900000060101" class="S1 S1s station" d="M412.3 559.3L414.4 561.5"/>
+	<path id="station-900000066102" data-id="900000066102" class="S1 S1s station" d="M337.8 633.6L335.7 631.5"/>
+	<path id="station-900000049202" data-id="900000049202" class="S1 S1s station" d="M262.9 664.2V667.2"/>
+	<path id="station-900000049201" data-id="900000049201" class="S1 S1s station" d="M218.6 666.8V663.8"/>
+	<path id="station-900000050301" data-id="900000050301" class="S1 S1s station" d="M190.5 637.9L188.3 640"/>
+	<path id="station-900000050355" data-id="900000050355" class="S1 S1s station" d="M162.9 628.5V631.6"/>
+	<path id="station-900000066101" data-id="900000066101" class="S1 S1s station" d="M314.7 651.5L316.9 653.7"/>
+	<path id="station-900000063101" data-id="900000063101" class="S1 S1s station" d="M390.8 585L388.6 582.9"/>
+	<path id="station-900000068301" data-id="900000068301" class="S2 S2s station" d="M513.8 607L516 604.8"/>
+	<path id="station-900000074202" data-id="900000074202" class="S2 S2s station" d="M545.5 685.5H542.5"/>
+	<path id="station-900000245028" data-id="900000245028" class="S2 S2s station" d="M545.6 738H542.6"/>
+	<path id="station-900000135001" data-id="900000135001" class="S2 S2s station" d="M705.8 57.5L708 59.7"/>
+	<path id="station-900000350162" data-id="900000350162" class="S2 S2s station" d="M717.1 46.4L719.3 48.6"/>
+	<path id="station-900000350161" data-id="900000350161" class="S2 S2s station" d="M737.3 26.3L739.4 28.5"/>
+	<path id="station-900000350163" data-id="900000350163" class="S2 S2s station" d="M727.4 36.2L729.6 38.4"/>
+	<path id="station-900000073101" data-id="900000073101" class="S2 S2s station" d="M537.3 626.9L535.1 629"/>
+	<path id="station-900000072101" data-id="900000072101" class="S2 S2s station" d="M542.5 658.7H545.5"/>
+	<path id="station-900000074201" data-id="900000074201" class="S2 S2s station" d="M542.5 717.5H545.5"/>
+	<path id="station-900000220114" data-id="900000220114" class="S2 S2s station" d="M315.6 734.1V731.6"/>
+	<path id="station-900000091205" data-id="900000091205" class="S25 S25s station" d="M298.9 71.4L301 69.2"/>
+	<path id="station-900000091203" data-id="900000091203" class="S25 S25s station" d="M287.7 60.5L289.8 58.3"/>
+	<path id="station-900000096405" data-id="900000096405" class="S25 S25s station" d="M358 102.6V105.6"/>
+	<path id="station-900000085105" data-id="900000085105" class="S25 S25s station" d="M449.8 102.6V105.4"/>
+	<path id="station-900000063452" data-id="900000063452" class="S25 S25s station" d="M485.3 611.4L483.2 609.2"/>
+	<path id="station-900000064256" data-id="900000064256" class="S25 S25s station" d="M407.5 685.2L409.7 687.4"/>
+	<path id="station-900000064201" data-id="900000064201" class="S25 S25s station" d="M383.6 713.5L381.5 711.4"/>
+	<path id="station-900000067221" data-id="900000067221" class="S25 S25s station" d="M464.8 632.4L462.7 630.3"/>
+	<path id="station-900000160001" data-id="900000160001" class="S3 S3s station" d="M824.8 416L827 413.9"/>
+	<path id="station-900000160002" data-id="900000160002" class="S3 S3s station" d="M843.3 434.3L845.5 432.1"/>
+	<path id="station-900000183001" data-id="900000183001" class="S3 S3s station" d="M1010.8 532.6L1013 530.4"/>
+	<path id="station-900000182001" data-id="900000182001" class="S3 S3s station" d="M972.6 494.4L974.8 492.3"/>
+	<path id="station-900000182002" data-id="900000182002" class="S3 S3s station" d="M991.8 513.8L994 511.6"/>
+	<path id="station-900000183002" data-id="900000183002" class="S3 S3s station" d="M1027.6 549.4L1029.8 547.2"/>
+	<path id="station-900000180002" data-id="900000180002" class="S3 S3s station" d="M934.6 456.3L936.8 454.2"/>
+	<path id="station-900000180001" data-id="900000180001" class="S3 S3s station" d="M953.7 475.4L955.8 473.3"/>
 </g>
 
 </svg>
