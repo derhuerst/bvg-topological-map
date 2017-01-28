@@ -353,36 +353,32 @@
 	stroke: red !important;
 	stroke-width: 20 !important;
 }
-.soon {
-	stroke: blue !important;
-	stroke-width: 10 !important;
-}
 </style>
 
 <g stroke-width="1" fill="none" fill-rule="evenodd">
-	<path d="M41 701.7V698.7" stroke="#846DAB"/>
-	<path d="M824.8 416L827 413.9" stroke="#0065AE"/>
-	<path d="M913.3 282.6L911.1999999999999 280.5" stroke="#846DAB"/>
-	<path d="M951.4 240.4L953.6 242.6" stroke="#846DAB"/>
-	<path d="M974.2 218L976.3000000000001 220.2" stroke="#846DAB"/>
-	<path d="M855.8000000000001 240.89999999999998L853.6 242.99999999999997" stroke="#846DAB"/>
-	<path d="M934.3000000000001 261.59999999999997L932.1 259.49999999999994" stroke="#846DAB"/>
-	<path d="M154.2 444.8L156.6 447.2" stroke="#846DAB"/>
-	<path d="M79 295L81 293L79 295z" stroke="#EE7202"/>
-	<path d="M104 320L101.8 322.2" stroke="#EE7202"/>
-	<path d="M129.3 345.4L127.10000000000001 347.5" stroke="#EE7202"/>
-	<path d="M150.70000000000002 366.7L148.50000000000003 368.9" stroke="#EE7202"/>
-	<path d="M193.00000000000003 389.09999999999997V392.09999999999997" stroke="#EE7202"/>
-	<path d="M929.3 359V356" stroke="#EE7202"/>
-	<path d="M1001.5 358.7V355.7" stroke="#EE7202"/>
-	<path d="M1066 358.7V355.7" stroke="#EE7202"/>
-	<path d="M1105 333.09999999999997L1107.3 335.29999999999995" stroke="#EE7202"/>
-	<path d="M1094.7 343.69999999999993L1096.9 345.79999999999995" stroke="#EE7202"/>
-	<path d="M1084.7 358.59999999999997V355.49999999999994" stroke="#EE7202"/>
-	<path d="M1032.3 358.59999999999997V355.49999999999994" stroke="#EE7202"/>
-	<path d="M1112 255.39999999999995H1115" stroke="#EE7202"/>
-	<path d="M1112 241.69999999999996H1115" stroke="#EE7202"/>
-	<path d="M1112 319.59999999999997H1115.1" stroke="#EE7202"/>
+	<path id="station-900000230000" data-id="900000230000" class="S7 station" d="M41 701.7V698.7" stroke="#846DAB"/>
+	<path id="station-900000160001" data-id="900000160001" class="S3 station" d="M824.8 416L827 413.9" stroke="#0065AE"/>
+	<path id="station-900000170005" data-id="900000170005" class="S7 station" d="M913.3 282.6L911.2 280.5" stroke="#846DAB"/>
+	<path id="station-900000170002" data-id="900000170002" class="S7 station" d="M951.4 240.4L953.6 242.6" stroke="#846DAB"/>
+	<path id="station-900000170003" data-id="900000170003" class="S7 station" d="M974.2 218L976.3 220.2" stroke="#846DAB"/>
+	<path id="station-900000152002" data-id="900000152002" class="S7 station" d="M855.8 240.9L853.6 243" stroke="#846DAB"/>
+	<path id="station-900000170001" data-id="900000170001" class="S7 station" d="M934.3 261.6L932.1 259.5" stroke="#846DAB"/>
+	<path id="station-900000048101" data-id="900000048101" class="S7 station" d="M154.2 444.8L156.6 447.2" stroke="#846DAB"/>
+	<path id="station-900000030202" data-id="900000030202" class="S5 station" d="M79 295L81 293L79 295z" stroke="#EE7202"/>
+	<path id="station-900000025424" data-id="900000025424" class="S5 station" d="M104 320L101.8 322.2" stroke="#EE7202"/>
+	<path id="station-900000025321" data-id="900000025321" class="S5 station" d="M129.3 345.4L127.1 347.5" stroke="#EE7202"/>
+	<path id="station-900000026105" data-id="900000026105" class="S5 station" d="M150.7 366.7L148.5 368.9" stroke="#EE7202"/>
+	<path id="station-900000025423" data-id="900000025423" class="S5 station" d="M193 389.1V392.1" stroke="#EE7202"/>
+	<path id="station-900000171001" data-id="900000171001" class="S5 station" d="M929.3 359V356" stroke="#EE7202"/>
+	<path id="station-900000175002" data-id="900000175002" class="S5 station" d="M1001.5 358.7V355.7" stroke="#EE7202"/>
+	<path id="station-900000320026" data-id="900000320026" class="S5 station" d="M1066 358.7V355.7" stroke="#EE7202"/>
+	<path id="station-900000320006" data-id="900000320006" class="S5 station" d="M1105 333.1L1107.3 335.3" stroke="#EE7202"/>
+	<path id="station-900000320007" data-id="900000320007" class="S5 station" d="M1094.7 343.7L1096.9 345.8" stroke="#EE7202"/>
+	<path id="station-900000320008" data-id="900000320008" class="S5 station" d="M1084.7 358.6V355.5" stroke="#EE7202"/>
+	<path id="station-900000176001" data-id="900000176001" class="S5 station" d="M1032.3 358.6V355.5" stroke="#EE7202"/>
+	<path id="station-900000320003" data-id="900000320003" class="S5 station" d="M1112 255.4H1115" stroke="#EE7202"/>
+	<path id="station-900000320002" data-id="900000320002" class="S5 station" d="M1112 241.7H1115" stroke="#EE7202"/>
+	<path id="station-900000320005" data-id="900000320005" class="S5 station" d="M1112 319.6H1115.1" stroke="#EE7202"/>
 	<path d="M894.1 557.2V554.2" stroke="#CD9C53"/>
 	<path d="M980.3 667L978.1999999999999 669" stroke="#CD9C53"/>
 	<path d="M784 529.7V526.7" stroke="#CD9C53"/>
