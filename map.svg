@@ -379,22 +379,23 @@
 	<path id="station-900000320003" data-id="900000320003" class="S5 station" d="M1112 255.4H1115" stroke="#EE7202"/>
 	<path id="station-900000320002" data-id="900000320002" class="S5 station" d="M1112 241.7H1115" stroke="#EE7202"/>
 	<path id="station-900000320005" data-id="900000320005" class="S5 station" d="M1112 319.6H1115.1" stroke="#EE7202"/>
-	<path d="M894.1 557.2V554.2" stroke="#CD9C53"/>
-	<path d="M980.3 667L978.1999999999999 669" stroke="#CD9C53"/>
-	<path d="M784 529.7V526.7" stroke="#CD9C53"/>
-	<path d="M341.5 420V422.7" stroke="#62AD2D"/>
-	<path d="M702.2 399.3V399.40000000000003" stroke="#62AD2D"/>
-	<path d="M688.7 417.20000000000005L686.5 415.1" stroke="#62AD2D"/>
-	<path d="M603.3 422.70000000000005V419.6" stroke="#62AD2D"/>
-	<path d="M451.99999999999994 419.70000000000005V422.70000000000005" stroke="#62AD2D"/>
-	<path d="M671.1999999999999 425.70000000000005V422.6" stroke="#62AD2D"/>
-	<path stroke="#00A192" d="M340.8 472V472.1L343 474.20000000000005"/>
-	<path stroke="#00A192" d="M275.2 538.6L277.3 540.7"/>
-	<path stroke="#00A192" d="M265 548.8000000000001L267 551.0000000000001"/>
-	<path stroke="#00A192" d="M253.3 560.3000000000001L255.5 562.5000000000001"/>
-	<path stroke="#00A192" d="M240.9 572.3000000000001L243 574.5000000000001"/>
-	<path stroke="#00A192" d="M203.8 610L205.9 612.2"/>
-	<path stroke="#00A192" d="M375.70000000000005 445.20000000000005L373.6 443.00000000000006"/>
+	<path id="station-900000260002" data-id="900000260002" class="S46 station" d="M980.3 667L978.2 669" stroke="#CD9C53"/>
+	<path id="station-900000192002" data-id="900000192002" class="S47 station" d="M894.1 557.2V554.2" stroke="#CD9C53"/>
+	<path id="station-900000077155" data-id="900000077155" class="S47 S46 station" d="M784 529.7V526.7" stroke="#CD9C53"/>
+	<!-- <path class="todo" d="M702.2 399.3V399.4" stroke="#62AD2D"/> -->
+	<path id="station-900000023301" data-id="900000023301" class="U1 station" d="M341.5 420V422.7" stroke="#62AD2D"/>
+	<path id="station-900000014102" data-id="900000014102" class="U1 station" d="M688.7 417.2L686.5 415.1" stroke="#62AD2D"/>
+	<path id="station-900000013103" data-id="900000013103" class="U1 station" d="M603.3 422.7V419.6" stroke="#62AD2D"/>
+	<path id="station-900000005201" data-id="900000005201" class="U1 station" d="M452 419.7V422.7" stroke="#62AD2D"/>
+	<path id="station-900000014101" data-id="900000014101" class="U1 station" d="M671.2 425.7V422.6" stroke="#62AD2D"/>
+	<!-- <path class="todo" stroke="#00A192" d="M340.8 472V472.1L343 474.2"/> -->
+	<path id="station-900000045101" data-id="900000045101" class="U3 station" d="M275.2 538.6L277.3 540.7" stroke="#00A192"/>
+	<path id="station-900000051202" data-id="900000051202" class="U3 station" d="M265 548.8L267 550.8" stroke="#00A192"/>
+	<path id="station-900000051302" data-id="900000051302" class="U3 station" d="M253.8 560.3L255.5 562" stroke="#00A192"/>
+	<path id="station-900000051303" data-id="900000051303" class="U3 station" d="M240.8 572.3L243 574.5" stroke="#00A192"/>
+	<!-- todo: thielplatz, oskar-helene-heim -->
+	<path id="station-900000050282" data-id="900000050282" class="U3 station" d="M203.8 610L206 612.2" stroke="#00A192"/>
+	<path id="station-900000023202" data-id="900000023202" class="U3 station" d="M375.7 445.2L373.6 443" stroke="#00A192"/>
 	<path stroke="#E94E0E" d="M622.2 269.2H619"/>
 	<path stroke="#E94E0E" d="M640.6 359.7L642.8000000000001 361.9"/>
 	<path stroke="#E94E0E" d="M626.3000000000001 374.09999999999997L628.5000000000001 376.29999999999995"/>
