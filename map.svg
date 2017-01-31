@@ -37,7 +37,7 @@
 	stroke-width: 1;
 }
 
-#interchanges .station {
+#stations #interchanges .station {
 	fill: #fff;
 	stroke: #000;
 	stroke-width: .5;
@@ -499,6 +499,7 @@
 	<path id="station-900000070301" data-id="900000070301" class="U6 station wifi" d="M564.1 593.3H561.3"/>
 	<path id="station-900000088202" data-id="900000088202" class="U6 station" d="M321 103.2L323.2 101.1"/>
 	<path id="station-900000022202" data-id="900000022202" class="U7 station" d="M299 328.8H302"/>
+	<path id="station-900000023302" data-id="900000023302" class="U7 station wifi" d="M296 430H299"/>
 	<path id="station-900000083101" data-id="900000083101" class="U7 station" d="M745.7 672.1L747.8 670"/>
 	<path id="station-900000083102" data-id="900000083102" class="U7 station wifi" d="M731.6 658.2L733.8 656"/>
 	<path id="station-900000082201" data-id="900000082201" class="U7 station wifi" d="M715.4 641.9L717.6 639.8"/>
