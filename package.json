@@ -8,5 +8,15 @@
 	"author":      "Jannis R <mail@jannisr.de>",
 	"homepage":    "https://github.com/derhuerst/bvg-topological-map",
 	"repository":  "derhuerst/bvg-topological-map",
-	"license":     "ISC"
+	"license":     "ISC",
+	"devDependencies": {
+		"tape": "^4.6.3",
+		"cheerio": "^0.22.0",
+		"vbb-stations": "^3.2.0",
+		"tap-min": "^1.2.0"
+	},
+	"scripts": {
+		"test": "node test.js | tap-min",
+		"prepublish": "npm test"
+	}
 }
