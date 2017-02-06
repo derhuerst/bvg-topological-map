@@ -16,7 +16,7 @@
 		"tap-min": "^1.2.0"
 	},
 	"scripts": {
-		"test": "node test.js | tap-min",
+		"test": "node test.js | tap-min",
 		"prepublish": "npm test"
 	}
 }
