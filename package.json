@@ -3,9 +3,14 @@
   "description": "BVG transport map as a nice SVG.",
   "version": "0.1.0",
   "main": "index.json",
+  "bin": {
+    "render-svg": "./bin/render-svg.js"
+  },
   "files": [
     "map.svg",
-    "index.json"
+    "index.json",
+    "render.js",
+    "bin"
   ],
   "keywords": [
     "bvg",
@@ -26,5 +31,8 @@
   "scripts": {
     "test": "node test.js | tap-min",
     "prepublish": "npm test"
+  },
+  "dependencies": {
+    "vhtml": "^2.1.0"
   }
 }

@@ -2,3 +2,6 @@ sudo: false
 language: node_js
 node_js:
   - 'stable'
+script:
+  - ./bin/render-svg.js >/dev/null
+  - npm test
