@@ -11,6 +11,11 @@ insert_final_newline = true
 indent_style = tab
 indent_size = 4
 
+# npm…
+[package.json]
+indent_style = spaces
+indent_size = 2
+
 # Use spaces in YAML.
 [**.{yml,yaml}]
 indent_style = spaces
