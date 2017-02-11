@@ -2,9 +2,10 @@
   "name": "bvg-topological-map",
   "description": "BVG transport map as a nice SVG.",
   "version": "0.1.0",
-  "main": "map.svg",
+  "main": "index.json",
   "files": [
-    "map.svg"
+    "map.svg",
+    "index.json"
   ],
   "keywords": [
     "bvg",
