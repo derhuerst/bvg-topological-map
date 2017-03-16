@@ -1,11 +1,12 @@
 'use strict'
 
 const fs = require('fs')
+const path = require('path')
 const test = require('tape')
 const cheerio = require('cheerio')
 const stations = require('vbb-stations')
 
-const map = fs.readFileSync(require.resolve('.'))
+const map = fs.readFileSync(path.join(__dirname, 'map.svg'))
 const $ = cheerio.load(map)
 
 test('every station has a valid id', (t) => {
