@@ -29,8 +29,9 @@
     "tap-min": "^1.2.0"
   },
   "scripts": {
+    "build": "./bin/render-svg.js > dist/map.svg",
     "test": "node test.js | tap-min",
-    "prepublish": "npm test"
+    "prepublish": "npm run build && npm test"
   },
   "dependencies": {
     "vhtml": "^2.1.0"

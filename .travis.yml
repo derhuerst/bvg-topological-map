@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - 'stable'
 script:
-  - ./bin/render-svg.js >dist/map.svg
+  - npm run build
   - npm test
 deploy:
   provider: pages
