@@ -5,3 +5,10 @@ node_js:
 script:
   - ./bin/render-svg.js >dist/map.svg
   - npm test
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local_dir: dist
