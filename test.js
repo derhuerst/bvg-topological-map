@@ -6,7 +6,7 @@ const test = require('tape')
 const cheerio = require('cheerio')
 const stations = require('vbb-stations')
 
-const map = fs.readFileSync(path.join(__dirname, 'map.svg'))
+const map = fs.readFileSync(path.join(__dirname, 'dist/map.svg'))
 const $ = cheerio.load(map)
 
 test('every station has a valid id', (t) => {
