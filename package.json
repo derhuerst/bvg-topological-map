@@ -25,7 +25,7 @@
   "devDependencies": {
     "tape": "^4.6.3",
     "cheerio": "^0.22.0",
-    "vbb-stations": "^3.2.0",
+    "vbb-stations": "^4.1.0",
     "tap-min": "^1.2.0"
   },
   "scripts": {
