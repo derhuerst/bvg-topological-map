@@ -1,5 +1,7 @@
 # bvg-topological-map 🔜
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/derhuerst/bvg-topological-map.svg)](https://greenkeeper.io/)
+
 **The official public transport map for Berlin**, as an SVG. Every station and every line is tagged.
 
 [![build status](https://img.shields.io/travis/derhuerst/bvg-topological-map.svg)](https://travis-ci.org/derhuerst/bvg-topological-map)
