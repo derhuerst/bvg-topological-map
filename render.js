@@ -135,7 +135,7 @@ const render = (h, data) =>
 				renderInterchanges(h, data.stations)
 			])
 		].concat(renderStops(h, data.stations))
-		),
+		)
 	])
 
 module.exports = render
