@@ -25,7 +25,7 @@ const common = `
 const renderStyles = (data) => {
 	let css = common
 
-	for (let line in data.lines) {
+	for (let line of Object.keys(data.lines)) {
 		const color = data.lines[line].color
 		css += `
 #lines .line.${line},  #stations .station.${line}  {stroke: ${color}}`
@@ -50,7 +50,7 @@ const renderLabelDef = (h, id, label) => {
 
 const renderLabelDefs = (h, labels) => {
 	const r = []
-	for (let id in labels) {
+	for (let id of Object.keys(labels)) {
 		const label = labels[id]
 		r.push(renderLabelDef(h, id, label))
 	}
@@ -68,7 +68,7 @@ const renderLabelUse = (h, id, label, [x, y]) => {
 
 const renderLabelUses = (h, labels) => {
 	const r = []
-	for (let id in labels) {
+	for (let id of Object.keys(labels)) {
 		const label = labels[id]
 		for (let position of label.positions)
 			r.push(renderLabelUse(h, id, label, position))
@@ -86,7 +86,7 @@ const renderLine = (h, id, line) => {
 
 const renderLines = (h, lines) => {
 	const r = []
-	for (let id in lines) {
+	for (let id of Object.keys(lines)) {
 		const line = lines[id]
 		r.push(renderLine(h, id, line))
 	}
@@ -104,7 +104,7 @@ const renderStation = (h, id, station) => {
 
 const renderInterchanges = (h, stations) => {
 	const r = []
-	for (let id in stations) {
+	for (let id of Object.keys(stations)) {
 		const station = stations[id]
 		if (!station.interchange) continue
 		r.push(renderStation(h, id, station))
@@ -114,7 +114,7 @@ const renderInterchanges = (h, stations) => {
 
 const renderStops = (h, stations) => {
 	const r = []
-	for (let id in stations) {
+	for (let id of Object.keys(stations)) {
 		const station = stations[id]
 		if (station.interchange) continue
 		r.push(renderStation(h, id, station))
