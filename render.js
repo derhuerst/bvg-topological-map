@@ -1,5 +1,7 @@
 'use strict'
 
+const data = require('.')
+
 const common = `
 #lines .line {
 	fill: none;
@@ -127,7 +129,7 @@ const defaults = {
 	renderStops
 }
 
-const render = (h, data, opt = {}) => {
+const render = (h, opt = {}) => {
 	opt = Object.assign({}, defaults, opt)
 
 	return h('svg', {
