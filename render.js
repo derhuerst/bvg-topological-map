@@ -34,30 +34,28 @@ const renderStyles = (data) => {
 	return css
 }
 
-const renderLabelDef = (h, id, label) => {
-	return h('g', {
-		id: 'label-' + id
-	}, ([
-		h('path', {
-			fill: label.bg, d: label.body
-		})
-	]).concat(label.caption.map((part) =>
-		h('path', {
-			fill: label.fg, d: part
-		})
-	)))
-}
-
-const renderLabelDefs = (h, labels) => {
-	const r = []
-	for (let id of Object.keys(labels)) {
-		const label = labels[id]
-		r.push(renderLabelDef(h, id, label))
+const renderDefs = (h, data) => {
+	const defs = []
+	for (let id of Object.keys(data.labels)) {
+		const label = data.labels[id]
+		defs.push(h('g', {
+			id: 'label-' + id
+		}, ([
+			h('path', {
+				fill: label.bg, d: label.body
+			}),
+			...label.caption.map((part) => {
+				return h('path', {
+					fill: label.fg, d: part
+				})
+			})
+		])))
 	}
-	return r
+
+	return defs
 }
 
-const renderLabelUse = (h, id, label, [x, y]) => {
+const renderLabel = (h, id, [x, y]) => {
 	return h('use', {
 		class: 'label ' + id,
 		'xlink:href': '#label-' + id,
@@ -66,12 +64,13 @@ const renderLabelUse = (h, id, label, [x, y]) => {
 	})
 }
 
-const renderLabelUses = (h, labels) => {
+const renderLabels = (h, data) => {
 	const r = []
-	for (let id of Object.keys(labels)) {
-		const label = labels[id]
-		for (let position of label.positions)
-			r.push(renderLabelUse(h, id, label, position))
+	for (let id of Object.keys(data.labels)) {
+		const label = data.labels[id]
+		for (let position of label.positions) {
+			r.push(renderLabel(h, id, position))
+		}
 	}
 	return r
 }
@@ -84,10 +83,10 @@ const renderLine = (h, id, line) => {
 	})
 }
 
-const renderLines = (h, lines) => {
+const renderLines = (h, data) => {
 	const r = []
-	for (let id of Object.keys(lines)) {
-		const line = lines[id]
+	for (let id of Object.keys(data.lines)) {
+		const line = data.lines[id]
 		r.push(renderLine(h, id, line))
 	}
 	return r
@@ -102,20 +101,20 @@ const renderStation = (h, id, station) => {
 	})
 }
 
-const renderInterchanges = (h, stations) => {
+const renderInterchanges = (h, data) => {
 	const r = []
-	for (let id of Object.keys(stations)) {
-		const station = stations[id]
+	for (let id of Object.keys(data.stations)) {
+		const station = data.stations[id]
 		if (!station.interchange) continue
 		r.push(renderStation(h, id, station))
 	}
 	return r
 }
 
-const renderStops = (h, stations) => {
+const renderStops = (h, data) => {
 	const r = []
-	for (let id of Object.keys(stations)) {
-		const station = stations[id]
+	for (let id of Object.keys(data.stations)) {
+		const station = data.stations[id]
 		if (station.interchange) continue
 		r.push(renderStation(h, id, station))
 	}
@@ -131,14 +130,14 @@ const render = (h, data) => {
 		viewBox: `0 0 ${data.width} ${data.height}`
 	}, [
 		h('style', {}, renderStyles(data)),
-		h('defs', {}, renderLabelDefs(h, data.labels)),
-		h('g', {id: 'labels'}, renderLabelUses(h, data.labels)),
-		h('g', {id: 'lines'}, renderLines(h, data.lines)),
+		h('defs', {}, renderDefs(h, data)),
+		h('g', {id: 'labels'}, renderLabels(h, data)),
+		h('g', {id: 'lines'}, renderLines(h, data)),
 		h('g', {id: 'stations'}, [
 			h('g', {id: 'interchanges'}, [
-				renderInterchanges(h, data.stations)
+				renderInterchanges(h, data)
 			]),
-			...renderStops(h, data.stations)
+			...renderStops(h, data)
 		])
 	])
 }
