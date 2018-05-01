@@ -34,8 +34,8 @@ const renderStyles = (data) => {
 	return css
 }
 
-const renderLabelDef = (h, id, label) =>
-	h('g', {
+const renderLabelDef = (h, id, label) => {
+	return h('g', {
 		id: 'label-' + id
 	}, ([
 		h('path', {
@@ -46,6 +46,7 @@ const renderLabelDef = (h, id, label) =>
 			fill: label.fg, d: part
 		})
 	)))
+}
 
 const renderLabelDefs = (h, labels) => {
 	const r = []
@@ -56,13 +57,14 @@ const renderLabelDefs = (h, labels) => {
 	return r
 }
 
-const renderLabelUse = (h, id, label, [x, y]) =>
-	h('use', {
+const renderLabelUse = (h, id, label, [x, y]) => {
+	return h('use', {
 		class: 'label ' + id,
 		'xlink:href': '#label-' + id,
 		href: '#label-' + id,
 		transform: `translate(${x}, ${y})`
 	})
+}
 
 const renderLabelUses = (h, labels) => {
 	const r = []
@@ -74,12 +76,13 @@ const renderLabelUses = (h, labels) => {
 	return r
 }
 
-const renderLine = (h, id, line) =>
-	h('path', {
+const renderLine = (h, id, line) => {
+	return h('path', {
 		id: 'line-' + id,
 		class: 'line ' + id,
 		d: line.shape
 	})
+}
 
 const renderLines = (h, lines) => {
 	const r = []
@@ -90,13 +93,14 @@ const renderLines = (h, lines) => {
 	return r
 }
 
-const renderStation = (h, id, station) =>
-	h('path', {
+const renderStation = (h, id, station) => {
+	return h('path', {
 		id: 'station-' + id,
 		'data-id': id,
 		class: 'station ' + station.lines.join(' ') + (station.wifi ? ' wifi' : ''),
 		d: station.shape
 	})
+}
 
 const renderInterchanges = (h, stations) => {
 	const r = []
@@ -118,8 +122,8 @@ const renderStops = (h, stations) => {
 	return r
 }
 
-const render = (h, data) =>
-	h('svg', {
+const render = (h, data) => {
+	return h('svg', {
 		xmlns: 'http://www.w3.org/2000/svg',
 		'xmlns:xlink': 'http://www.w3.org/1999/xlink',
 		width: data.width,
@@ -133,9 +137,10 @@ const render = (h, data) =>
 		h('g', {id: 'stations'}, [
 			h('g', {id: 'interchanges'}, [
 				renderInterchanges(h, data.stations)
-			])
-		].concat(renderStops(h, data.stations))
-		)
+			]),
+			...renderStops(h, data.stations)
+		])
 	])
+}
 
 module.exports = render

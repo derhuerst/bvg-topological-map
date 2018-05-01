@@ -22,6 +22,9 @@
   "homepage": "https://github.com/derhuerst/bvg-topological-map",
   "repository": "derhuerst/bvg-topological-map",
   "license": "ISC",
+  "engines": {
+    "node": ">=6"
+  },
   "devDependencies": {
     "tape": "^4.6.3",
     "cheerio": "^1.0.0-rc.2",
