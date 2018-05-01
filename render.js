@@ -13,7 +13,7 @@ const common = `
 	stroke-width: 1;
 }
 
-#stations #interchanges .station {
+#stations .station.interchange {
 	fill: #fff;
 	stroke: #000;
 	stroke-width: .5;
@@ -30,7 +30,8 @@ const renderStyles = (h, opt, data) => {
 	for (let line of Object.keys(data.lines)) {
 		const color = data.lines[line].color
 		css += `
-#lines .line.${line},  #stations .station.${line}  {stroke: ${color}}`
+#lines .line.${line}, #stations .station.${line} {stroke: ${color}}
+#stations .station.interchange.${line} {stroke: #000}`
 	}
 
 	return css
@@ -90,28 +91,22 @@ const renderLines = (h, opt, data) => {
 	return r
 }
 
-const stationProps = (h, id, station) => ({
-	id: 'station-' + id,
-	'data-id': id,
-	class: 'station ' + station.lines.join(' ') + (station.wifi ? ' wifi' : ''),
-	d: station.shape
-})
-
-const renderInterchanges = (h, opt, data) => {
-	const r = []
-	for (let id of Object.keys(data.stations)) {
-		const station = data.stations[id]
-		if (!station.interchange) continue
-		r.push(h('path', opt.stationProps(h, id, station)))
+const stationProps = (h, id, station) => {
+	let cls = 'station ' + station.lines.join(' ')
+	if (station.wifi) cls += ' wifi'
+	if (station.interchange) cls += ' interchange'
+	return {
+		id: 'station-' + id,
+		'data-id': id,
+		class: cls,
+		d: station.shape
 	}
-	return r
 }
 
-const renderStops = (h, opt, data) => {
+const renderStations = (h, opt, data) => {
 	const r = []
 	for (let id of Object.keys(data.stations)) {
 		const station = data.stations[id]
-		if (station.interchange) continue
 		r.push(h('path', opt.stationProps(h, id, station)))
 	}
 	return r
@@ -125,8 +120,7 @@ const defaults = {
 	lineProps,
 	renderLines,
 	stationProps,
-	renderInterchanges,
-	renderStops
+	renderStations
 }
 
 const render = (h, opt = {}) => {
@@ -143,12 +137,7 @@ const render = (h, opt = {}) => {
 		h('defs', {}, opt.renderDefs(h, opt, data)),
 		h('g', {id: 'labels'}, opt.renderLabels(h, opt, data)),
 		h('g', {id: 'lines'}, opt.renderLines(h, opt, data)),
-		h('g', {id: 'stations'}, [
-			h('g', {id: 'interchanges'}, [
-				opt.renderInterchanges(h, opt, data)
-			]),
-			...opt.renderStops(h, opt, data)
-		])
+		h('g', {id: 'stations'}, opt.renderStations(h, opt, data))
 	])
 }
 

@@ -21,7 +21,7 @@ Embed [`map.svg`](https://raw.githubusercontent.com/derhuerst/bvg-topological-ma
 #my-map #stations .station {
 	stroke: red;
 }
-#my-map #interchanges .station {
+#my-map #stations .station.interchange {
 	fill: red;
 }
 #my-map #station-900000040101 {
