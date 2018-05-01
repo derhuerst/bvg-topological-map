@@ -2,6 +2,14 @@
 
 const data = require('.')
 
+const rootProps = (h, opt, data) => ({
+	xmlns: 'http://www.w3.org/2000/svg',
+	'xmlns:xlink': 'http://www.w3.org/1999/xlink',
+	width: data.width,
+	height: data.height,
+	viewBox: `0 0 ${data.width} ${data.height}`
+})
+
 const common = `
 #lines .line {
 	fill: none;
@@ -112,7 +120,12 @@ const renderStations = (h, opt, data) => {
 	return r
 }
 
+const baseLayer = () => []
+const middleLayer = () => []
+const topLayer = () => []
+
 const defaults = {
+	rootProps,
 	renderStyles,
 	renderDefs,
 	labelProps,
@@ -120,24 +133,24 @@ const defaults = {
 	lineProps,
 	renderLines,
 	stationProps,
-	renderStations
+	renderStations,
+	baseLayer,
+	middleLayer,
+	topLayer
 }
 
 const render = (h, opt = {}) => {
 	opt = Object.assign({}, defaults, opt)
 
-	return h('svg', {
-		xmlns: 'http://www.w3.org/2000/svg',
-		'xmlns:xlink': 'http://www.w3.org/1999/xlink',
-		width: data.width,
-		height: data.height,
-		viewBox: `0 0 ${data.width} ${data.height}`
-	}, [
+	return h('svg', opt.rootProps(h, opt, data), [
 		h('style', {}, opt.renderStyles(h, opt, data)),
 		h('defs', {}, opt.renderDefs(h, opt, data)),
+		...opt.baseLayer(h, opt, data),
 		h('g', {id: 'labels'}, opt.renderLabels(h, opt, data)),
 		h('g', {id: 'lines'}, opt.renderLines(h, opt, data)),
-		h('g', {id: 'stations'}, opt.renderStations(h, opt, data))
+		...opt.middleLayer(h, opt, data),
+		h('g', {id: 'stations'}, opt.renderStations(h, opt, data)),
+		...opt.topLayer(h, opt, data)
 	])
 }
 
