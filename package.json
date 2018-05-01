@@ -1,7 +1,7 @@
 {
   "name": "bvg-topological-map",
   "description": "BVG transport map as a nice SVG.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "index.json",
   "bin": {
     "render-svg": "./bin/render-svg.js"
@@ -31,7 +31,7 @@
   "scripts": {
     "build": "./bin/render-svg.js > dist/map.svg",
     "test": "node test.js | tap-min",
-    "prepublish": "npm run build && npm test"
+    "prepublishOnly": "npm run build && npm test"
   },
   "dependencies": {
     "vhtml": "^2.1.0"
