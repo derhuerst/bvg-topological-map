@@ -2,6 +2,8 @@
 
 **The official public transport map for Berlin**, as an SVG. Every station and every line is tagged.
 
+*Note:* **This dataset does not reflect the current BVG transit map.** See [#7](https://github.com/derhuerst/bvg-topological-map/issues/7) for a guide on how to bring it up to date.
+
 [![build status](https://img.shields.io/travis/derhuerst/bvg-topological-map.svg)](https://travis-ci.org/derhuerst/bvg-topological-map)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/bvg-topological-map.svg)
 [![gitter channel](https://badges.gitter.im/derhuerst/vbb-rest.svg)](https://gitter.im/derhuerst/vbb-rest)
