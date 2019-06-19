@@ -8,7 +8,7 @@
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/bvg-topological-map.svg)
 [![gitter channel](https://badges.gitter.im/derhuerst/vbb-rest.svg)](https://gitter.im/derhuerst/vbb-rest)
 
-[![topological BVG map](https://rawgit.com/derhuerst/bvg-topological-map/gh-pages/map.svg)](https://rawgit.com/derhuerst/bvg-topological-map/gh-pages/map.svg)
+[![topological BVG map](/../gh-pages/map.svg)](/../gh-pages/map.svg)
 
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/bvg-topological-map.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
