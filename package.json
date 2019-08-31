@@ -29,7 +29,7 @@
     "cheerio": "^1.0.0-rc.3",
     "tap-min": "^2.0.0",
     "tape": "^4.10.1",
-    "vbb-stations": "^6.9.0"
+    "vbb-stations": "^7.0.0"
   },
   "scripts": {
     "build": "./bin/render-svg.js > dist/map.svg",
