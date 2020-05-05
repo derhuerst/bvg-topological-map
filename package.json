@@ -34,9 +34,13 @@
   "scripts": {
     "build": "./bin/render-svg.js > dist/map.svg",
     "test": "node test.js | tap-min",
-    "prepublishOnly": "npm run build && npm test"
+    "prepublishOnly": "npm run build && npm test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "vhtml": "^2.1.0"
-  }
+    "vhtml": "^2.1.0",
+    "snyk": "^1.319.0"
+  },
+  "snyk": true
 }
