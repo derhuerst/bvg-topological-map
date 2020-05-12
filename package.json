@@ -37,6 +37,6 @@
     "prepublishOnly": "npm run build && npm test"
   },
   "dependencies": {
-    "vhtml": "^2.1.0"
+    "vhtml": "^2.2.0"
   }
 }
