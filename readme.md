@@ -8,16 +8,16 @@
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/bvg-topological-map.svg)
 [![gitter channel](https://badges.gitter.im/derhuerst/vbb-rest.svg)](https://gitter.im/derhuerst/vbb-rest)
 
-[![topological BVG map](/../gh-pages/map.svg)](/../gh-pages/map.svg)
+[![topological BVG map](https://derhuerst.github.io/bvg-topological-map/map.svg)](https://derhuerst.github.io/bvg-topological-map/map.svg)
 
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/bvg-topological-map.svg)
-[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
-[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
+[![support me via GitHub Sponsors](https://img.shields.io/badge/support%20me-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
+[![chat with me on Twitter](https://img.shields.io/badge/chat%20with%20me-on%20Twitter-1da1f2.svg)](https://twitter.com/derhuerst)
 
 
 ## Usage
 
-Embed [`map.svg`](https://raw.githubusercontent.com/derhuerst/bvg-topological-map/gh-pages/map.svg) directly into your HTML. You can change the look of the map in your CSS:
+Embed [`map.svg`](https://derhuerst.github.io/bvg-topological-map/map.svg) directly into your HTML. You can change the look of the map in your CSS:
 
 ```css
 #my-map #stations .station {
